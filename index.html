@@ -10,6 +10,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Special+Elite&display=swap" rel="stylesheet">
 
 <style>
+  /* Fix for the Fleet Commanders spacing */
+.coordinators-section h3 {
+  color: #3a2a16;
+  font-size: 1.5rem;
+  margin-bottom: 1rem; /* Added space below the title */
+}
+
+.coordinators-section .captain-note {
+  margin-bottom: 1.5rem; /* Added space below the note */
+  display: block;
+}
+
+/* Fix for Team ID Centering */
+.message.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers items horizontally */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.team-id-display {
+  background: rgba(0,0,0,0.2); 
+  margin: 20px auto; 
+  padding: 20px; 
+  border-radius: 10px;
+  border: 2px dashed var(--gold);
+  width: 100%;
+  max-width: 300px; /* Keeps it tight on mobile */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
  :root {
   --gold: #d4af37;
   --dark-brown: #2a1b0e;
@@ -637,14 +671,20 @@ form.addEventListener('submit', async function(e) {
 function showSuccess(teamId) {
   formContent.innerHTML = `
     <div class="message success">
-      <strong>Ahoy! Registration successful!</strong><br><br>
-      Your Team Code is:<br>
-      <h2 style="margin:0.8em 0; color:var(--gold); font-size:3rem; text-shadow:2px 2px 8px #000;">
-        ${teamId}
-      </h2>
-      Save this code carefully!<br>
-      You'll need it during the hunt.<br><br>
-      Fair winds and following seas, Captain!
+      <h3 style="font-family: 'Cinzel'; margin-bottom: 10px;">COMMISSION GRANTED!</h3>
+      <p>Your Crew is registered. Keep this seal safe:</p>
+      
+      <div class="team-id-display">
+        <h2 style="margin:0; color:var(--gold); font-size:2.8rem; letter-spacing:3px; text-shadow: 0 0 15px #d4af37;">
+          ${teamId}
+        </h2>
+      </div>
+      
+      <p style="margin-top: 10px;">Show this code at the starting line.<br>Fair winds, Captain!</p>
+      
+      <button onclick="window.location.reload()" class="enter-btn" style="font-size:1rem; margin-top:25px; width: auto; padding: 10px 25px;">
+        RETURN TO HARBOR
+      </button>
     </div>
   `;
 }
