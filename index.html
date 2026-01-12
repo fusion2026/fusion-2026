@@ -119,12 +119,23 @@ body {
 }
 
 .parchment::before {
-  font-size: 0.9rem;
-  width: 90%;
-  text-align: center;
-  top: -15px;
+  content: "✧ FUSION 2026 TREASURE HUNT ✧";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--dark-brown);
+  padding: 8px 15px; /* Reduced padding for mobile */
+  border-radius: 30px;
+  font-family: 'Cinzel', serif;
+  /* This ensures the text scales based on screen width */
+  font-size: clamp(0.75rem, 3.5vw, 1.3rem); 
+  white-space: nowrap;
+  box-shadow: 0 4px 10px #00000088;
+  border: 1px solid var(--dark-brown);
+  z-index: 10;
 }
-
 /* ── GRID SYSTEM (The Most Important Part) ──────────────── */
 .grid-2 {
   display: grid;
@@ -521,7 +532,19 @@ button {
             </div>
           </div>
         </div>
+<div class="payment-notice" style="margin-top: 2rem; padding: 15px; background: rgba(212, 175, 55, 0.1); border: 2px solid var(--gold); border-radius: 8px; text-align: center;">
+  <h3 style="font-family: 'Cinzel'; color: #3a2a16; margin-bottom: 5px;">💰 ENTRY BOUNTY</h3>
+  <p style="font-size: 1.1rem; color: #1a0f03;"><strong>₹70 per head (₹280 per team)</strong></p>
+  <p style="font-size: 0.9rem; margin-top: 5px; color: #5c4033;">Send fees to the Treasurer to confirm your spot:</p>
+  <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px;">
+    <a href="tel:YOUR_NUMBER_HERE" style="color: #8b6f47; text-decoration: none;">📞 9373894212</a>
+  </p>
+</div>
 
+<hr style="border: 0; border-top: 2px dashed #8b6f47; margin: 2rem 0;">
+
+<div class="coordinators-section">
+  </div>
         <button type="submit" id="submitBtn">CONFIRM REGISTRATION 🪙</button>
         <hr style="border: 0; border-top: 2px dashed #8b6f47; margin: 2rem 0;">
 
