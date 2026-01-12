@@ -481,60 +481,93 @@ button {
         <h3 style="margin:2rem 0 1rem; text-align:center; color:#3a2a16">Crew Members</h3>
         <p class="captain-note">(Member 1 = Captain)</p>
 
-        <div class="grid-2">
-          <!-- Member 1 (Captain) -->
-          <div class="member-section">
-            <h4>Member 1 - Captain</h4>
-            <div class="form-group">
-              <label>Name *</label>
-              <input type="text" id="m1_name" required>
-            </div>
-            <div class="form-group">
-              <label>Mobile *</label>
-              <input type="tel" id="m1_mobile" required pattern="[0-9]{10}">
-            </div>
-          </div>
+        <div class="payment-notice" style="margin-top: 2rem; padding: 15px; background: rgba(212, 175, 55, 0.1); border: 2px solid var(--gold); border-radius: 8px; text-align: center;">
+  <h3 style="font-family: 'Cinzel'; color: #3a2a16; margin-bottom: 5px;">💰 ENTRY BOUNTY</h3>
+  <p style="font-size: 1.1rem; color: #1a0f03;"><strong>₹70 per head (₹420 per team of 6)</strong></p>
+  <p style="font-size: 0.9rem; margin-top: 5px; color: #5c4033;">Contact Treasurer for Fee Payment:</p>
+  <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px;">
+    <a href="tel:YOUR_NUMBER" style="color: #8b6f47; text-decoration: none;">📞 YOUR_NUMBER</a>
+  </p>
+</div>
 
-          <!-- Members 2-4 -->
-          <div class="member-section">
-            <h4>Member 2</h4>
-            <div class="form-group">
-              <label>Name *</label>
-              <input type="text" id="m2_name" required>
-            </div>
-            <div class="form-group">
-              <label>Mobile *</label>
-              <input type="tel" id="m2_mobile" required pattern="[0-9]{10}">
-            </div>
-          </div>
+<h3 style="margin:2rem 0 1rem; text-align:center; color:#3a2a16; font-family: 'Cinzel';">Crew Members</h3>
 
-          <div class="member-section">
-            <h4>Member 3</h4>
-            <div class="form-group">
-              <label>Name *</label>
-              <input type="text" id="m3_name" required>
-            </div>
-            <div class="form-group">
-              <label>Mobile *</label>
-              <input type="tel" id="m3_mobile" required pattern="[0-9]{10}">
-            </div>
-          </div>
+<div class="grid-2">
+  <div class="member-section">
+    <h4>Member 1 - Captain 🏴‍☠️</h4>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" id="m1_name" readonly placeholder="Fill Captain Name Above" style="background: rgba(0,0,0,0.05);">
+    </div>
+    <div class="form-group">
+      <label>Mobile</label>
+      <input type="tel" id="m1_mobile" readonly placeholder="Fill Contact Above" style="background: rgba(0,0,0,0.05);">
+    </div>
+  </div>
 
-          <div class="member-section">
-            <h4>Member 4</h4>
-            <div class="form-group">
-              <label>Name *</label>
-              <input type="text" id="m4_name" required>
-            </div>
-            <div class="form-group">
-              <label>Mobile *</label>
-              <input type="tel" id="m4_mobile" required pattern="[0-9]{10}">
-            </div>
-          </div>
-        </div>
+  <div class="member-section">
+    <h4>Member 2</h4>
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" id="m2_name" required>
+    </div>
+    <div class="form-group">
+      <label>Mobile *</label>
+      <input type="tel" id="m2_mobile" required pattern="[0-9]{10}">
+    </div>
+  </div>
+
+  <div class="member-section">
+    <h4>Member 3</h4>
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" id="m3_name" required>
+    </div>
+    <div class="form-group">
+      <label>Mobile *</label>
+      <input type="tel" id="m3_mobile" required pattern="[0-9]{10}">
+    </div>
+  </div>
+
+  <div class="member-section">
+    <h4>Member 4</h4>
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" id="m4_name" required>
+    </div>
+    <div class="form-group">
+      <label>Mobile *</label>
+      <input type="tel" id="m4_mobile" required pattern="[0-9]{10}">
+    </div>
+  </div>
+
+  <div class="member-section">
+    <h4>Member 5</h4>
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" id="m5_name" required>
+    </div>
+    <div class="form-group">
+      <label>Mobile *</label>
+      <input type="tel" id="m5_mobile" required pattern="[0-9]{10}">
+    </div>
+  </div>
+
+  <div class="member-section">
+    <h4>Member 6</h4>
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" id="m6_name" required>
+    </div>
+    <div class="form-group">
+      <label>Mobile *</label>
+      <input type="tel" id="m6_mobile" required pattern="[0-9]{10}">
+    </div>
+  </div>
+</div>
 <div class="payment-notice" style="margin-top: 2rem; padding: 15px; background: rgba(212, 175, 55, 0.1); border: 2px solid var(--gold); border-radius: 8px; text-align: center;">
   <h3 style="font-family: 'Cinzel'; color: #3a2a16; margin-bottom: 5px;">💰 ENTRY BOUNTY</h3>
-  <p style="font-size: 1.1rem; color: #1a0f03;"><strong>₹70 per head (₹280 per team)</strong></p>
+  <p style="font-size: 1.1rem; color: #1a0f03;"><strong>₹70 per head (₹420 per team)</strong></p>
   <p style="font-size: 0.9rem; margin-top: 5px; color: #5c4033;">Send fees to the Treasurer to confirm your spot:</p>
   <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px;">
     <a href="tel:YOUR_NUMBER_HERE" style="color: #8b6f47; text-decoration: none;">📞 9373894212</a>
